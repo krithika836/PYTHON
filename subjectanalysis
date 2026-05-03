@@ -1,0 +1,16 @@
+maths=['raj','anu','kiran','bala','pavi']
+political=['raj','bala','meera','peter','ken']
+social=['ben','raj','meera','arun','mohan']
+m=set(maths)
+p=set(political)
+s=set(social)
+one=list(m&p&s)
+print(one)
+a=(m&p)
+b=(p&s)
+c=(s&m)
+two=(a|b|c)-(m&p&s)
+print(list(two))
+three=(m|p|s)-(m&p&s)-a-b-c
+print(list(three))
+    
